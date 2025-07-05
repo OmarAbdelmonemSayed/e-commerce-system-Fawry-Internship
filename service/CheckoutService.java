@@ -29,7 +29,7 @@ public class CheckoutService {
                 throw new OutOfStockException(cartItem.getProduct().getName());
             }
 
-            if (cartItem.getProduct() instanceof Shipable) {
+            if (cartItem.getProduct() instanceof Shippable) {
                 shipableCartItems.add(cartItem);
             }
 
@@ -52,9 +52,9 @@ public class CheckoutService {
         System.out.println("** Shipment notice **");
 
         for (CartItem cartItem : shipableCartItems) {
-            totalWeight += (int)(((Shipable)cartItem.getProduct()).getWeight() * cartItem.getQuantity() * 1000);
+            totalWeight += (int)(((Shippable)cartItem.getProduct()).getWeight() * cartItem.getQuantity() * 1000);
             System.out.printf("%-20s %5s\n", cartItem.getQuantity() + "x " + cartItem.getProduct().getName(),
-                    (int)(((Shipable)cartItem.getProduct()).getWeight() * cartItem.getQuantity() * 1000) + "g");
+                    (int)(((Shippable)cartItem.getProduct()).getWeight() * cartItem.getQuantity() * 1000) + "g");
         }
 
         System.out.println("Total package weight " + (double)totalWeight / 1000 + "kg\n");

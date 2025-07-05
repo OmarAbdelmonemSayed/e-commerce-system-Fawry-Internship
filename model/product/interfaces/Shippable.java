@@ -1,6 +1,6 @@
 package model.product.interfaces;
 
-public interface Shipable {
+public interface Shippable {
     String getName();
     double getWeight();
 }

@@ -15,6 +15,10 @@ This project simulates a simple console-based e-commerce system written in Java.
 - Console-based checkout summary with subtotal, shipping, and remaining balance
 
 ---
+## 📊 Class Diagram
+
+![Class Diagram](assets/diagram.png)
+---
 ## 📂 Project Structure
 - `model/`
     - `product/`
@@ -41,6 +45,27 @@ This project simulates a simple console-based e-commerce system written in Java.
     - `InsufficientBalanceException.java`
 - `Main.java`
 
+---
+## ✅ Demo Scenarios (in Main.java)
+
+`Main.java` demonstrates key use cases with 5 different customers:
+
+1. **Successful checkout**
+    - Adds valid items
+    - Includes shipping and expiry handling
+    - Prints subtotal, shipping fee, and final balance
+
+2. **Empty cart**
+    - Checkout fails with `EmptyCartException`
+
+3. **Expired product**
+    - Adding an expired product triggers `ExpiredException`
+
+4. **Out of stock**
+    - Adding more than available quantity throws `OutOfStockException`
+
+5. **Insufficient balance**
+    - Customer with low balance fails to checkout (`InsufficientBalanceException`)
 ---
 ## 🛠 How to Run
 

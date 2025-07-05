@@ -16,7 +16,7 @@ public class Main {
 
         // Products
         Product cheese = new FullFeaturedProduct("Cheese", 30.0, 3, 0.4, LocalDate.now().plusDays(1));
-        Product tv = new ShipableProduct("TV", 1000.0, 2, 5.0);
+        Product tv = new ShippableProduct("TV", 1000.0, 2, 5.0);
         Product biscuit = new ExpirableProduct("Biscuits", 5.0, 8, LocalDate.now().minusDays(1));
         Product mobile = new BasicProduct("Mobile", 350.0, 3);
 

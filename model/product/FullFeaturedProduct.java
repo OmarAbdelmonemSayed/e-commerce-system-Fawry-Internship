@@ -1,11 +1,11 @@
 package model.product;
 
 import model.product.interfaces.Expirable;
-import model.product.interfaces.Shipable;
+import model.product.interfaces.Shippable;
 
 import java.time.LocalDate;
 
-public class FullFeaturedProduct extends Product implements Expirable, Shipable {
+public class FullFeaturedProduct extends Product implements Expirable, Shippable {
     private double weight;
     private LocalDate expiryDate;
 
