@@ -3,6 +3,9 @@
 This project simulates a simple console-based e-commerce system written in Java. It models real-world product types, customer behavior, and business rules like product expiry, shipping, and purchase limitations.
 
 ---
+## Screenshot from a running app
+![runningapp](assets/output.png)
+---
 
 ## 📦 Features
 
